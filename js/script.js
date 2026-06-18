@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Close Floating Rating
+    const closeRatingBtn = document.querySelector('.close-rating');
+    const floatingRatingContainer = document.getElementById('floating-rating-container');
+
+    if (closeRatingBtn && floatingRatingContainer) {
+        closeRatingBtn.addEventListener('click', () => {
+            floatingRatingContainer.style.opacity = '0';
+            setTimeout(() => {
+                floatingRatingContainer.style.display = 'none';
+            }, 300);
+        });
+    }
+
     // Scroll Reveal Animation
     const revealElements = document.querySelectorAll('.reveal');
 
