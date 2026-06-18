@@ -587,6 +587,7 @@ a {
   height: 50px;
   background-color: var(--cream);
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .customer-name {
